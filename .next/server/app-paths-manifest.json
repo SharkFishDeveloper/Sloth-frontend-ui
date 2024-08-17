@@ -1,0 +1,4 @@
+{
+  "/search/page": "app/search/page.js",
+  "/SingleRepoCard/page": "app/SingleRepoCard/page.js"
+}
