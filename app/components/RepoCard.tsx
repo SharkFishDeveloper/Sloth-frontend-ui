@@ -3,7 +3,7 @@ import { Repo } from '../search/page'
 import Link from 'next/link';
 
 const RepoCard = (repository:Repo) => {
-    const {name,forks,description,createdAt,creatorName} = repository;
+    const {name,forks,description,createdAt,creatorName,userId} = repository;
 
 
     const capitalizeFirstLetter = (str: string) => {
@@ -41,7 +41,8 @@ const RepoCard = (repository:Repo) => {
                     description,
                     forks,
                     createdAt,
-                    creatorName
+                    creatorName,
+                    userId
                   }
                 }}
               >

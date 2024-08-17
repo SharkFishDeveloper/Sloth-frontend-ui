@@ -1,19 +1,31 @@
 "use client"
 import { backend_url } from '@/util/backendUrl';
 import axios from 'axios';
-// import { searchRepo } from '@/functions/searchrepo';
 import React, { useState } from 'react'
 import { toast } from 'react-hot-toast';
 import Loader from '../components/Loader';
 import RepoCard from '../components/RepoCard';
 import Nothing from '../components/Nothing';
+import { useSession } from 'next-auth/react';
+import Signinerror from '../components/Signinerror';
 
+
+export interface PullRequest {
+  createdAt: Date;
+  parentBranch: string;
+  childBranch: string;
+  totalCommits: number;
+  message: string;
+  contributor: string;
+  id:string
+}
 export interface Repo{
   name:string,
   forks:string,
   createdAt:string,
   description:string,
-  creatorName:string
+  creatorName:string,
+  userId:string
 }
 
 const Search = () => {
@@ -21,6 +33,7 @@ const Search = () => {
    const [loading,setLoading] = useState(false);
    const [repositories,setRepo] = useState<Repo[]|null>(null);
    const [nothing,setNoting] = useState(false);
+   const session = useSession();
 
    const findRepo = async ()=>{
         setRepo(null);
@@ -52,7 +65,9 @@ const Search = () => {
  
    return (
    <div>
-     <div className="relative w-[80%] max-w-lg mx-auto mt-8">
+     {session.data ? (
+      <>
+      <div className="relative w-[80%] max-w-lg mx-auto mt-8">
       <input
         type="text"
         placeholder="Search repositories ..."
@@ -86,7 +101,7 @@ const Search = () => {
 
     {repositories && repositories.map((repos:Repo,index)=>(
        <div key={index} >
-        <RepoCard name={repos.name} createdAt={repos.createdAt} description={repos.description} forks={repos.forks} creatorName={repos.creatorName}/>
+        <RepoCard name={repos.name} createdAt={repos.createdAt} description={repos.description} forks={repos.forks} creatorName={repos.creatorName} userId={repos.userId}/>
        </div>
     ))}
 
@@ -94,6 +109,10 @@ const Search = () => {
       <Nothing/>
     )}
 
+      </>
+     ):(
+      <Signinerror/>
+     )}
    </div>
    )
 }

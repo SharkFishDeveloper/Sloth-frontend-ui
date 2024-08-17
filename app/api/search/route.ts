@@ -10,14 +10,15 @@ export async function POST(req: NextRequest) {
                 name:{
                     contains:search,
                     mode:"insensitive"
-                }                                
+                },                                
             },
             select:{
                 name:true,
                 createdAt:true,
                 forks:true  ,
                 description:true,
-                creatorName:true
+                creatorName:true,  
+                userId:true              
             },
             take: 5
         })
