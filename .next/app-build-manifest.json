@@ -18,24 +18,14 @@
       "static/chunks/138-13dd6893cc8f977c.js",
       "static/chunks/app/layout-68bf3275ef05cbbd.js"
     ],
-    "/page": [
+    "/SingleRepoCard/page": [
       "static/chunks/webpack-c1465c218e8d896c.js",
       "static/chunks/fd9d1056-48c365ed396dbdb4.js",
       "static/chunks/23-97730b0bc25b6c63.js",
       "static/chunks/main-app-fb66ed71acdbf5d7.js",
-      "static/chunks/998-d026b8db85881c59.js",
-      "static/chunks/138-13dd6893cc8f977c.js",
-      "static/chunks/app/page-c6501633783c7c50.js"
-    ],
-    "/profile/page": [
-      "static/chunks/webpack-c1465c218e8d896c.js",
-      "static/chunks/fd9d1056-48c365ed396dbdb4.js",
-      "static/chunks/23-97730b0bc25b6c63.js",
-      "static/chunks/main-app-fb66ed71acdbf5d7.js",
-      "static/chunks/998-d026b8db85881c59.js",
       "static/chunks/726-6eaba718fbc28b5b.js",
       "static/chunks/472-6906ef628b1bd9d0.js",
-      "static/chunks/app/profile/page-7a56156067073636.js"
+      "static/chunks/app/SingleRepoCard/page-1f9b3458145b3332.js"
     ],
     "/search/page": [
       "static/chunks/webpack-c1465c218e8d896c.js",
@@ -48,6 +38,25 @@
       "static/chunks/138-13dd6893cc8f977c.js",
       "static/chunks/app/search/page-66cb7f6be4529381.js"
     ],
+    "/signinAuth/page": [
+      "static/chunks/webpack-c1465c218e8d896c.js",
+      "static/chunks/fd9d1056-48c365ed396dbdb4.js",
+      "static/chunks/23-97730b0bc25b6c63.js",
+      "static/chunks/main-app-fb66ed71acdbf5d7.js",
+      "static/chunks/998-d026b8db85881c59.js",
+      "static/chunks/726-6eaba718fbc28b5b.js",
+      "static/chunks/138-13dd6893cc8f977c.js",
+      "static/chunks/app/signinAuth/page-b878477b5016583b.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-c1465c218e8d896c.js",
+      "static/chunks/fd9d1056-48c365ed396dbdb4.js",
+      "static/chunks/23-97730b0bc25b6c63.js",
+      "static/chunks/main-app-fb66ed71acdbf5d7.js",
+      "static/chunks/998-d026b8db85881c59.js",
+      "static/chunks/138-13dd6893cc8f977c.js",
+      "static/chunks/app/page-c6501633783c7c50.js"
+    ],
     "/signup/page": [
       "static/chunks/webpack-c1465c218e8d896c.js",
       "static/chunks/fd9d1056-48c365ed396dbdb4.js",
@@ -58,24 +67,15 @@
       "static/chunks/472-6906ef628b1bd9d0.js",
       "static/chunks/app/signup/page-532c3eb98a5188e7.js"
     ],
-    "/SingleRepoCard/page": [
-      "static/chunks/webpack-c1465c218e8d896c.js",
-      "static/chunks/fd9d1056-48c365ed396dbdb4.js",
-      "static/chunks/23-97730b0bc25b6c63.js",
-      "static/chunks/main-app-fb66ed71acdbf5d7.js",
-      "static/chunks/726-6eaba718fbc28b5b.js",
-      "static/chunks/472-6906ef628b1bd9d0.js",
-      "static/chunks/app/SingleRepoCard/page-1f9b3458145b3332.js"
-    ],
-    "/signinAuth/page": [
+    "/profile/page": [
       "static/chunks/webpack-c1465c218e8d896c.js",
       "static/chunks/fd9d1056-48c365ed396dbdb4.js",
       "static/chunks/23-97730b0bc25b6c63.js",
       "static/chunks/main-app-fb66ed71acdbf5d7.js",
       "static/chunks/998-d026b8db85881c59.js",
       "static/chunks/726-6eaba718fbc28b5b.js",
-      "static/chunks/138-13dd6893cc8f977c.js",
-      "static/chunks/app/signinAuth/page-b878477b5016583b.js"
+      "static/chunks/472-6906ef628b1bd9d0.js",
+      "static/chunks/app/profile/page-7a56156067073636.js"
     ]
   }
 }
