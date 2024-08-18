@@ -2,14 +2,14 @@
 import { backend_url } from '@/util/backendUrl';
 import axios from 'axios';
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import Simpleloader from '../components/Simpleloader';
 import { PullRequest } from '../search/page';
 import { NODE_URL } from '@/util/nodeUrl';
 
 const SingleRepoCard = () => {
-  const searchParams = useSearchParams();
+  const searchParams =  useSearchParams();
   const name = searchParams.get("name") || "";
   const forks = searchParams.get("forks");
   const userID = searchParams.get("userId") || "";
@@ -163,4 +163,10 @@ const SingleRepoCard = () => {
   );
 };
 
-export default SingleRepoCard;
+export default function SingleRepoCardPage() {
+  return (
+    <Suspense fallback={<Simpleloader />}>
+      <SingleRepoCard />
+    </Suspense>
+  );
+}

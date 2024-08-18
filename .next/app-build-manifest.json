@@ -1,35 +1,81 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-c1465c218e8d896c.js",
+      "static/chunks/fd9d1056-48c365ed396dbdb4.js",
+      "static/chunks/23-97730b0bc25b6c63.js",
+      "static/chunks/main-app-fb66ed71acdbf5d7.js",
+      "static/chunks/app/_not-found/page-0f7cba25c0086664.js"
     ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-c1465c218e8d896c.js",
+      "static/chunks/fd9d1056-48c365ed396dbdb4.js",
+      "static/chunks/23-97730b0bc25b6c63.js",
+      "static/chunks/main-app-fb66ed71acdbf5d7.js",
+      "static/css/d5e1394642e96619.css",
+      "static/chunks/998-d026b8db85881c59.js",
+      "static/chunks/726-6eaba718fbc28b5b.js",
+      "static/chunks/138-13dd6893cc8f977c.js",
+      "static/chunks/app/layout-68bf3275ef05cbbd.js"
     ],
-    "/signinAuth/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/signinAuth/page.js"
-    ],
-    "/signup/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/signup/page.js"
-    ],
-    "/profile/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/profile/page.js"
+    "/page": [
+      "static/chunks/webpack-c1465c218e8d896c.js",
+      "static/chunks/fd9d1056-48c365ed396dbdb4.js",
+      "static/chunks/23-97730b0bc25b6c63.js",
+      "static/chunks/main-app-fb66ed71acdbf5d7.js",
+      "static/chunks/998-d026b8db85881c59.js",
+      "static/chunks/138-13dd6893cc8f977c.js",
+      "static/chunks/app/page-c6501633783c7c50.js"
     ],
     "/search/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/search/page.js"
+      "static/chunks/webpack-c1465c218e8d896c.js",
+      "static/chunks/fd9d1056-48c365ed396dbdb4.js",
+      "static/chunks/23-97730b0bc25b6c63.js",
+      "static/chunks/main-app-fb66ed71acdbf5d7.js",
+      "static/chunks/998-d026b8db85881c59.js",
+      "static/chunks/726-6eaba718fbc28b5b.js",
+      "static/chunks/472-6906ef628b1bd9d0.js",
+      "static/chunks/138-13dd6893cc8f977c.js",
+      "static/chunks/app/search/page-66cb7f6be4529381.js"
+    ],
+    "/profile/page": [
+      "static/chunks/webpack-c1465c218e8d896c.js",
+      "static/chunks/fd9d1056-48c365ed396dbdb4.js",
+      "static/chunks/23-97730b0bc25b6c63.js",
+      "static/chunks/main-app-fb66ed71acdbf5d7.js",
+      "static/chunks/998-d026b8db85881c59.js",
+      "static/chunks/726-6eaba718fbc28b5b.js",
+      "static/chunks/472-6906ef628b1bd9d0.js",
+      "static/chunks/app/profile/page-7a56156067073636.js"
+    ],
+    "/signinAuth/page": [
+      "static/chunks/webpack-c1465c218e8d896c.js",
+      "static/chunks/fd9d1056-48c365ed396dbdb4.js",
+      "static/chunks/23-97730b0bc25b6c63.js",
+      "static/chunks/main-app-fb66ed71acdbf5d7.js",
+      "static/chunks/998-d026b8db85881c59.js",
+      "static/chunks/726-6eaba718fbc28b5b.js",
+      "static/chunks/138-13dd6893cc8f977c.js",
+      "static/chunks/app/signinAuth/page-b878477b5016583b.js"
+    ],
+    "/signup/page": [
+      "static/chunks/webpack-c1465c218e8d896c.js",
+      "static/chunks/fd9d1056-48c365ed396dbdb4.js",
+      "static/chunks/23-97730b0bc25b6c63.js",
+      "static/chunks/main-app-fb66ed71acdbf5d7.js",
+      "static/chunks/998-d026b8db85881c59.js",
+      "static/chunks/726-6eaba718fbc28b5b.js",
+      "static/chunks/472-6906ef628b1bd9d0.js",
+      "static/chunks/app/signup/page-532c3eb98a5188e7.js"
+    ],
+    "/SingleRepoCard/page": [
+      "static/chunks/webpack-c1465c218e8d896c.js",
+      "static/chunks/fd9d1056-48c365ed396dbdb4.js",
+      "static/chunks/23-97730b0bc25b6c63.js",
+      "static/chunks/main-app-fb66ed71acdbf5d7.js",
+      "static/chunks/726-6eaba718fbc28b5b.js",
+      "static/chunks/472-6906ef628b1bd9d0.js",
+      "static/chunks/app/SingleRepoCard/page-1f9b3458145b3332.js"
     ]
   }
 }
