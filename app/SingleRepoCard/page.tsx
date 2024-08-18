@@ -61,6 +61,8 @@ const SingleRepoCard = () => {
       console.log(response.data)
       if(response.data.status===200){
         setDownloadUrl(response.data.message)
+        console.log(response.data.message);
+        console.log(response.data.message, '_blank');
         const newTab = window.open(response.data.message, '_blank');
         window.URL.revokeObjectURL(response.data.message);
       }else {
