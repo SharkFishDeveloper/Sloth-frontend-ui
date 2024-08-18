@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
             return NextResponse.json({ message: "Syntax error",status:400 });
         }
         const response = await axios.post(`${NODE_URL}/fork`,{userID,name});
-        return NextResponse.json({ message: response.data.message,status:200 });
+        return NextResponse.json({ message: response.data,status:200 });
     } catch (error) {
         console.log(error)
 

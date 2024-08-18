@@ -1,1 +1,1 @@
-export const NODE_URL = `https://hono-sloth-backend.first12last100.workers.dev/`
+export const NODE_URL = `https://hono-sloth-backend.first12last100.workers.dev`
