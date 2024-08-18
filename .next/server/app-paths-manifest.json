@@ -1,15 +1,15 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/profile/route": "app/api/profile/route.js",
-  "/api/pr/route": "app/api/pr/route.js",
-  "/api/fork/route": "app/api/fork/route.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/api/signup/route": "app/api/signup/route.js",
+  "/api/fork/route": "app/api/fork/route.js",
+  "/api/pr/route": "app/api/pr/route.js",
   "/api/search/route": "app/api/search/route.js",
   "/page": "app/page.js",
-  "/search/page": "app/search/page.js",
+  "/api/signup/route": "app/api/signup/route.js",
+  "/api/profile/route": "app/api/profile/route.js",
   "/profile/page": "app/profile/page.js",
-  "/signinAuth/page": "app/signinAuth/page.js",
+  "/search/page": "app/search/page.js",
   "/signup/page": "app/signup/page.js",
-  "/SingleRepoCard/page": "app/SingleRepoCard/page.js"
+  "/SingleRepoCard/page": "app/SingleRepoCard/page.js",
+  "/signinAuth/page": "app/signinAuth/page.js"
 }
