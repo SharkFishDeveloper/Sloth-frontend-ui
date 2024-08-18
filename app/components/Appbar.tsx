@@ -21,40 +21,39 @@ const Appbar = () => {
     return (
       <div className="bg-gray-500 text-white h-16 rounded-lg shadow-lg flex items-center px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto flex justify-between items-center">
-          <p className="text-xl font-semibold" >
+          <p className="text-xl font-semibold">
             <Link href={"/"}>Slothhub</Link>
           </p>
+          {/* Large screen menu */}
           <div className="hidden md:flex space-x-8">
             <p className="hover:text-gray-400 cursor-pointer">About</p>
-            <p className="hover:text-gray-400 cursor-pointer">How to use ?</p>
-
-            {!session.data  ? (
+            <p className="hover:text-gray-400 cursor-pointer">How to use?</p>
+            {!session.data ? (
               <div className="hover:text-gray-400 cursor-pointer">
-              {/* <Link href={"/signin"}>Login</Link> */}
-              <p  onClick={async()=>await signIn()}>Login</p>
-            </div>
-            ):(<p className="cursor-pointer hover:text-gray-400" onClick={()=>handleLogout()}>Logout</p>)}
-
+                <p onClick={async () => await signIn()}>Login</p>
+              </div>
+            ) : (
+              <p className="cursor-pointer hover:text-gray-400" onClick={handleLogout}>Logout</p>
+            )}
           </div>
-          <div className="md:hidden flex items-center">
-            <button className="text-white hover:text-gray-400">
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+          {/* Small screen login/logout button */}
+          <div className="md:hidden">
+            {!session.data ? (
+              <button
+                className="bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                onClick={async () => await signIn()}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
-            </button>
+                Login
+              </button>
+            ) : (
+              <button
+                className="bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                onClick={handleLogout}
+              >
+                Logout
+              </button>
+            )}
           </div>
-          {/* {JSON.stringify(session.data)} */}
         </div>
       </div>
     );
