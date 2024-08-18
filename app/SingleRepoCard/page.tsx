@@ -58,6 +58,7 @@ const SingleRepoCard = () => {
     setLoadingDownload(true);
     try {
       const response = await axios.post(`${backend_url}/api/fork`,{userID,name});
+      console.log(response.data)
       if(response.data.status===200){
         setDownloadUrl(response.data.message)
         const newTab = window.open(response.data.message, '_blank');
