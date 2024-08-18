@@ -10,7 +10,6 @@ export async function POST(req: NextRequest) {
             },
             select:{
                 repositories:{
-                    
                     select:{
                         name:true,
                         forks:true,
