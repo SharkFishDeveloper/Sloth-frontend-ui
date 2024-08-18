@@ -60,8 +60,8 @@ const SingleRepoCard = () => {
       const response = await axios.post(`${backend_url}/api/fork`,{userID,name});
       console.log(response.data)
       if(response.data.status===200){
-        setDownloadUrl(response.data.message)
-        console.log(response.data.message);
+        setDownloadUrl(response.data.message.message)
+        console.log(response.data.message.message);
         console.log(response.data.message, '_blank');
         let url = response.data.message
         console.log(url);
