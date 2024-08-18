@@ -63,7 +63,10 @@ const SingleRepoCard = () => {
         setDownloadUrl(response.data.message)
         console.log(response.data.message);
         console.log(response.data.message, '_blank');
-        const newTab = window.open(response.data.message, '_blank');
+        let url = response.data.message
+        console.log(url);
+        const newTab = window.open(url, '_blank');
+        console.log(newTab);
         window.URL.revokeObjectURL(response.data.message);
       }else {
         return toast.error("Try again after some time")
